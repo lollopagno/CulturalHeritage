@@ -56,11 +56,13 @@ def load_images(INPUT_PATH):
     imgs_list = []
     annotations_list = []
     bounding_box_list = []
+    # labels_list = []
 
     dirs = os.listdir(INPUT_PATH)
 
     for index_dir, dir in enumerate(dirs):
         bounding_box_list.clear()
+        # labels_list.clear()
 
         imgs = os.listdir(INPUT_PATH + dirs[index_dir] + "/imgs/")
         annotations = os.listdir(INPUT_PATH + dirs[index_dir] + "/annotations/")
@@ -78,8 +80,15 @@ def load_images(INPUT_PATH):
                 try:
                     object = root[j]
                     box = object[4]
+
+                    # Bounding box
                     x_min, y_min, x_max, y_max = int(box[0].text), int(box[1].text), int(box[2].text), int(box[3].text)
                     bounding_box_list.append([[x_min - 1, y_min - 1], [x_max - 1, y_max - 1]])
+
+                    # Labels
+                    # tag_name = object[0]
+                    # labels_list.append(tag_name.text)
+
                     j += 1
                 except:
                     break
@@ -91,11 +100,18 @@ def load_images(INPUT_PATH):
             mask = np.zeros_like(img_read[:, :, 0])
 
             for j, box in enumerate(bounding_box_list):
+                # Draw rectangle bounding box
                 cv.rectangle(img_read, box[0], box[1], (0, 0, 255), 5)
                 polygon = np.array(
                     [[bounding_box_list[j][0]], [[bounding_box_list[j][1][0], bounding_box_list[j][0][1]]],
                      [bounding_box_list[j][1]], [[bounding_box_list[j][0][0], bounding_box_list[j][1][1]]]])
                 cv.fillConvexPoly(mask, polygon, 1)
+
+                # Draw rectangle labels
+                # x_start, y_start = box[0]
+                # x_end, y_end = box[1][0], y_start
+                # cv.rectangle(img_read, (x_start + 7, y_start + 5), (x_end - 5, y_end + 30), (255, 255, 255), cv.FILLED)
+                # cv.putText(img_read, labels_list[j], (x_start + 7, y_start + 25), cv.FONT_HERSHEY_PLAIN, 2, (0, 0, 0),2)
 
             # Get polygon
             alpha = 0.5
@@ -103,7 +119,9 @@ def load_images(INPUT_PATH):
             img = cv.addWeighted(img_read.copy(), alpha, img, 1 - alpha, 0)
             img = cv.resize(img, (400, 400))
             img = draw_description(img, split_title(dir))
-            # img = convert_img(img)
+
+            # cv.imwrite(INPUT_PATH + dirs[index_dir] + "/bounding_box/", imgs[index_xml])
+
             imgs_list.append(img)
             annotations_list.append(xml)
 
@@ -114,7 +132,7 @@ def back_img():
     """
     Action button back.
     """
-    global index_img, label, images, button_back, button_next
+    global index_img, label, images, button_back, button_next, xml
     index_img -= 1
 
     label.grid_forget()
@@ -131,13 +149,14 @@ def back_img():
     label.grid(row=0, column=0, columnspan=3)
     button_back.grid(row=1, column=0)
     button_next.grid(row=1, column=2)
+    window.title(xml[index_img])
 
 
 def forward_img():
     """
     Action forward button.
     """
-    global index_img, label, images, button_back, button_next
+    global index_img, label, images, button_back, button_next, xml
     index_img += 1
 
     label.grid_forget()
@@ -154,6 +173,7 @@ def forward_img():
     label.grid(row=0, column=0, columnspan=3)
     button_back.grid(row=1, column=0)
     button_next.grid(row=1, column=2)
+    window.title(xml[index_img])
 
 
 def submit_file():
@@ -166,7 +186,7 @@ def submit_file():
 
     if len(index_filter) != 0:
         index_img = index_filter[0]
-        img = convert_img(images[index_filter[0]])
+        img = convert_img(images[index_img])
 
         label.grid_forget()
         label = Label(image=img)
@@ -183,6 +203,14 @@ def submit_file():
         label.grid(row=0, column=0, columnspan=3)
         button_back.grid(row=1, column=0)
         button_next.grid(row=1, column=2)
+        window.title(xml[index_img])
+
+
+def exit():
+    """
+    Action exit button.
+    """
+    window.quit()
 
 
 INPUT_PATH = "Dataset/"
@@ -196,7 +224,7 @@ images, xml = load_images(INPUT_PATH)
 
 # Window 1  (Show images)
 window = Tk()
-window.title("Cultural Heritage Pesaro")
+# window.title("Cultural Heritage Pesaro")
 
 _img = images[index_img]
 _img = convert_img(_img)
@@ -205,7 +233,8 @@ label.grid(row=0, column=0, columnspan=3)
 
 button_back = Button(window, text="<<", command=lambda: back_img())
 button_next = Button(window, text=">>", command=lambda: forward_img())
-button_exit = Button(window, text="Exit", command=window.quit())
+button_exit = Button(window, text="Exit", command=exit())
+window.title(xml[index_img])
 
 if index_img == 0:
     button_back = Button(window, text="<<", state=DISABLED)
