@@ -16,7 +16,7 @@ title_images_list = []
 
 def split_title(title):
     r"""
-    Split text of the directory
+    Split text of the directory.
     :param title: text to split
     :return: text with the tabulations
     """
@@ -31,7 +31,7 @@ def split_title(title):
 
 def draw_description(img, text):
     r"""
-    Draw description image
+    Draw description image.
     :param text: image description
     :param img: image in which to insert the descrition
     :return: image with description
@@ -45,7 +45,7 @@ def draw_description(img, text):
     return img
 
 
-def stackImages(scale, img_array):
+def stack_images(scale, img_array):
     r"""
     Stack the images based on the number of them by rows and columns.
     Resize the images.
@@ -166,10 +166,10 @@ for i in range(0, 4):
     title = dirs[index_category]
     title_images_list.append(split_title(title))
 
-imgs_stack = stackImages(1, ([draw_description(imgs_list[0], title_images_list[0]),
-                              draw_description(imgs_list[1], title_images_list[1])],
-                             [draw_description(imgs_list[2], title_images_list[2]),
-                              draw_description(imgs_list[3], title_images_list[3])]))
+imgs_stack = stack_images(1, ([draw_description(imgs_list[0], title_images_list[0]),
+                               draw_description(imgs_list[1], title_images_list[1])],
+                              [draw_description(imgs_list[2], title_images_list[2]),
+                               draw_description(imgs_list[3], title_images_list[3])]))
 
 # Show images
 cv.imshow("Images", imgs_stack)
