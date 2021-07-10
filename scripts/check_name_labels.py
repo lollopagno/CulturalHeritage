@@ -122,7 +122,7 @@ for dir in os.listdir(INPUT_PATH):
             if dir == "arcoDiTrionfo":
                 assert name == ARCO
 
-            elif dir == "berlina":
+            elif dir == "berlinaMosca":
                 assert name == BERLINA
 
             elif dir == "casaRossini":

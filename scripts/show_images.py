@@ -120,7 +120,7 @@ def load_images(INPUT_PATH):
             img = cv.resize(img, (400, 400))
             img = draw_description(img, split_title(dir))
 
-            # cv.imwrite(INPUT_PATH + dirs[index_dir] + "/bounding_box/", imgs[index_xml])
+            # cv.imwrite(INPUT_PATH + dirs[index_dir] + "/bounding_box/" + imgs[index_xml], img)
 
             imgs_list.append(img)
             annotations_list.append(xml)
