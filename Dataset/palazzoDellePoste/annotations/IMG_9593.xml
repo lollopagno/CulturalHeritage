@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Palazzo Delle Poste</folder>
+	<filename>IMG_9593.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/palazzoDellePoste/imgs/IMG_9593.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Palazzo delle Poste</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>211</xmin>
+			<ymin>349</ymin>
+			<xmax>1082</xmax>
+			<ymax>802</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Giulio Perticari</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>989</xmin>
+			<ymin>591</ymin>
+			<xmax>1036</xmax>
+			<ymax>691</ymax>
+		</bndbox>
+	</object>
+</annotation>

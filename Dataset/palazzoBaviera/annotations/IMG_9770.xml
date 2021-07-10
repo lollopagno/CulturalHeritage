@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Palazzo Baviera</folder>
+	<filename>IMG_9770.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/palazzoBaviera/imgs/IMG_9770.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Palazzo Baviera</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>273</xmin>
+			<ymin>283</ymin>
+			<xmax>1073</xmax>
+			<ymax>645</ymax>
+		</bndbox>
+	</object>
+</annotation>

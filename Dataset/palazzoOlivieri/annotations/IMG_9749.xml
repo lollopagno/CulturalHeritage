@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Palazzo Olivieri</folder>
+	<filename>IMG_9749.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/palazzoOlivieri/imgs/IMG_9749.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>1300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Palazzo Olivieri</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2</xmin>
+			<ymin>169</ymin>
+			<xmax>900</xmax>
+			<ymax>886</ymax>
+		</bndbox>
+	</object>
+</annotation>

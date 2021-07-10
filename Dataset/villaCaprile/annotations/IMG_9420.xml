@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Villa Caprile</folder>
+	<filename>IMG_9420.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/villaCaprile/imgs/IMG_9420.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Villa Caprile</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>112</xmin>
+			<ymin>194</ymin>
+			<xmax>908</xmax>
+			<ymax>615</ymax>
+		</bndbox>
+	</object>
+</annotation>

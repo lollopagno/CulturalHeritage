@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Teatro Rossini</folder>
+	<filename>IMG_SL_23.jpg</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/teatroRossini/imgs/IMG_SL_23.jpg</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>1300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Teatro Rossini</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>112</xmin>
+			<ymin>117</ymin>
+			<xmax>835</xmax>
+			<ymax>757</ymax>
+		</bndbox>
+	</object>
+</annotation>

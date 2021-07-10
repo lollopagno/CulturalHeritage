@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Cattedrale Santa Maria Assunta</folder>
+	<filename>IMG_9304.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/cattedraleSantaMariaAssunta/imgs/IMG_9304.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>1300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Cattedrale Santa Maria Assunta</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>204</xmin>
+			<ymin>25</ymin>
+			<xmax>757</xmax>
+			<ymax>888</ymax>
+		</bndbox>
+	</object>
+</annotation>

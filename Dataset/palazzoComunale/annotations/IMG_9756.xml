@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Palazzo Comunale</folder>
+	<filename>IMG_9756.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/palazzoComunale/imgs/IMG_9756.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Palazzo Comunale</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>269</xmin>
+			<ymin>246</ymin>
+			<xmax>1113</xmax>
+			<ymax>689</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Fontana Piazza del Popolo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1105</xmin>
+			<ymin>600</ymin>
+			<xmax>1209</xmax>
+			<ymax>656</ymax>
+		</bndbox>
+	</object>
+</annotation>

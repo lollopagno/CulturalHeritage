@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Villino Ruggeri</folder>
+	<filename>IMG_9385.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/villinoRuggeri/imgs/IMG_9385.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Villino Ruggeri</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>224</xmin>
+			<ymin>199</ymin>
+			<xmax>951</xmax>
+			<ymax>891</ymax>
+		</bndbox>
+	</object>
+</annotation>

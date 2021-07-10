@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Chiesa San Agostino</folder>
+	<filename>IMG_9512.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/chiesaSanAgostino/imgs/IMG_9512.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>1300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Chiesa San Agostino</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>133</xmin>
+			<ymin>51</ymin>
+			<xmax>784</xmax>
+			<ymax>1210</ymax>
+		</bndbox>
+	</object>
+</annotation>

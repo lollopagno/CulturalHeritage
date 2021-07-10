@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Fontana Piazza</folder>
+	<filename>_MG_9055.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/fontanaPiazza/imgs/_MG_9055.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Fontana Piazza del Popolo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>518</xmin>
+			<ymin>387</ymin>
+			<xmax>871</xmax>
+			<ymax>618</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Palazzo delle Poste</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>65</ymin>
+			<xmax>921</xmax>
+			<ymax>565</ymax>
+		</bndbox>
+	</object>
+</annotation>

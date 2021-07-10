@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Palazzo Olivieri</folder>
+	<filename>IMG_9338.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/palazzoOlivieri/imgs/IMG_9338.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Palazzo Olivieri</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>24</xmin>
+			<ymin>2</ymin>
+			<xmax>1300</xmax>
+			<ymax>843</ymax>
+		</bndbox>
+	</object>
+</annotation>

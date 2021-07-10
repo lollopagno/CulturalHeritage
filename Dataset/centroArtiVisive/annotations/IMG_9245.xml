@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Centro Arti Visive</folder>
+	<filename>IMG_9245.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/centroArtiVisive/imgs/IMG_9245.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Centro Arti Visive Pescheria</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>45</xmin>
+			<ymin>62</ymin>
+			<xmax>1260</xmax>
+			<ymax>822</ymax>
+		</bndbox>
+	</object>
+</annotation>

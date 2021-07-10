@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Portale San Domenico</folder>
+	<filename>IMG_SL_29.jpg</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/portaleSanDomenico/imgs/IMG_SL_29.jpg</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Portale San Domenico</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>212</xmin>
+			<ymin>20</ymin>
+			<xmax>978</xmax>
+			<ymax>867</ymax>
+		</bndbox>
+	</object>
+</annotation>

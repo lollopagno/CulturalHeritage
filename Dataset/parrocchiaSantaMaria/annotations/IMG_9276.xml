@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Parrocchia Santa Maria</folder>
+	<filename>IMG_9276.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/parrocchiaSantaMaria/imgs/IMG_9276.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Parrocchia Santa Maria</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>328</xmin>
+			<ymin>21</ymin>
+			<xmax>903</xmax>
+			<ymax>831</ymax>
+		</bndbox>
+	</object>
+</annotation>

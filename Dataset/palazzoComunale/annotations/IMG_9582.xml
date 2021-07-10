@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Palazzo Comunale</folder>
+	<filename>IMG_9582.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/palazzoComunale/imgs/IMG_9582.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Palazzo Comunale</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>125</xmin>
+			<ymin>227</ymin>
+			<xmax>1108</xmax>
+			<ymax>739</ymax>
+		</bndbox>
+	</object>
+</annotation>

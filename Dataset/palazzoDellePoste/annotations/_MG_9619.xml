@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Palazzo Delle Poste</folder>
+	<filename>_MG_9619.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/palazzoDellePoste/imgs/_MG_9619.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Palazzo delle Poste</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>232</xmin>
+			<ymin>387</ymin>
+			<xmax>1036</xmax>
+			<ymax>806</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Fontana Piazza del Popolo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1138</xmin>
+			<ymin>703</ymin>
+			<xmax>1250</xmax>
+			<ymax>776</ymax>
+		</bndbox>
+	</object>
+</annotation>

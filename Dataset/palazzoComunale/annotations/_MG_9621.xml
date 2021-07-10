@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Palazzo Comunale</folder>
+	<filename>_MG_9621.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/palazzoComunale/imgs/_MG_9621.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Palazzo Comunale</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>321</xmin>
+			<ymin>397</ymin>
+			<xmax>908</xmax>
+			<ymax>718</ymax>
+		</bndbox>
+	</object>
+</annotation>

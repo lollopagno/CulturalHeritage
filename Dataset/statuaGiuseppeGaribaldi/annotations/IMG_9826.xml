@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Statua Giuseppe Garibaldi</folder>
+	<filename>IMG_9826.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/statuaGiuseppeGaribaldi/imgs/IMG_9826.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>1300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Giuseppe Garibaldi</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>338</xmin>
+			<ymin>304</ymin>
+			<xmax>587</xmax>
+			<ymax>697</ymax>
+		</bndbox>
+	</object>
+</annotation>

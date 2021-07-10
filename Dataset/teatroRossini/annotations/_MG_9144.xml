@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Teatro Rossini</folder>
+	<filename>_MG_9144.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/teatroRossini/imgs/_MG_9144.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Teatro Rossini</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>337</xmin>
+			<ymin>1</ymin>
+			<xmax>925</xmax>
+			<ymax>856</ymax>
+		</bndbox>
+	</object>
+</annotation>

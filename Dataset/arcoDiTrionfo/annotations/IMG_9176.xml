@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Arco Di Trionfo</folder>
+	<filename>IMG_9176.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/arcoDiTrionfo/imgs/IMG_9176.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>1300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Arco di Trionfo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>344</xmin>
+			<ymin>226</ymin>
+			<xmax>632</xmax>
+			<ymax>1074</ymax>
+		</bndbox>
+	</object>
+</annotation>

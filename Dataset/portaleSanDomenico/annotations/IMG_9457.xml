@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Portale San Domenico</folder>
+	<filename>IMG_9457.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/portaleSanDomenico/imgs/IMG_9457.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>1300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Portale San Domenico</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>143</xmin>
+			<ymin>123</ymin>
+			<xmax>784</xmax>
+			<ymax>1010</ymax>
+		</bndbox>
+	</object>
+</annotation>

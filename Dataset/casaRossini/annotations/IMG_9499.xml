@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Casa Rossini</folder>
+	<filename>IMG_9499.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/casaRossini/imgs/IMG_9499.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Casa Rossini</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>331</xmin>
+			<ymin>4</ymin>
+			<xmax>1121</xmax>
+			<ymax>771</ymax>
+		</bndbox>
+	</object>
+</annotation>

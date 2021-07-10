@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Fontana Piazza</folder>
+	<filename>IMG_SL_11.jpg</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/fontanaPiazza/imgs/IMG_SL_11.jpg</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Fontana Piazza del Popolo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>459</xmin>
+			<ymin>232</ymin>
+			<xmax>1218</xmax>
+			<ymax>745</ymax>
+		</bndbox>
+	</object>
+</annotation>

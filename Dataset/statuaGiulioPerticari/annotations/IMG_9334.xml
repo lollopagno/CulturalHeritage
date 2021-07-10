@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Statua Giulio Perticari</folder>
+	<filename>IMG_9334.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/statuaGiulioPerticari/imgs/IMG_9334.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>1300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Giulio Perticari</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>378</xmin>
+			<ymin>449</ymin>
+			<xmax>615</xmax>
+			<ymax>797</ymax>
+		</bndbox>
+	</object>
+</annotation>

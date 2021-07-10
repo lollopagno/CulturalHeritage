@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Scultura Della Memoria</folder>
+	<filename>_MG_9092.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/sculturaDellaMemoria/imgs/_MG_9092.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>900</width>
+		<height>1300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Scultura della Memoria</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>332</xmin>
+			<ymin>483</ymin>
+			<xmax>509</xmax>
+			<ymax>970</ymax>
+		</bndbox>
+	</object>
+</annotation>

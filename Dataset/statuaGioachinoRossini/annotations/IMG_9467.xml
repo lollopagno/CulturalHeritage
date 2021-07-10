@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Statua Gioachino Rossini</folder>
+	<filename>IMG_9467.JPG</filename>
+	<path>C:/Users/Lorenzo/Desktop/Faster-RCNN/Dataset/statuaGioachinoRossini/imgs/IMG_9467.JPG</path>
+	<source>
+		<database>Cultural Heritage Pesaro</database>
+	</source>
+	<size>
+		<width>1300</width>
+		<height>900</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Gioachino Rossini</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>582</xmin>
+			<ymin>221</ymin>
+			<xmax>820</xmax>
+			<ymax>685</ymax>
+		</bndbox>
+	</object>
+</annotation>
