@@ -1,7 +1,7 @@
 import os
-import xml.etree.ElementTree as ET
-import sys
 import re
+import sys
+import xml.etree.ElementTree as ET
 
 ARCO = "Arco di Trionfo"
 BERLINA = "Berlina Mosca"
@@ -27,11 +27,12 @@ TEATRO_ROSSINI = "Teatro Rossini"
 TEATRO_SPERIMENTALE = "Teatro Sperimentale"
 VILLA_CAPRILE = "Villa Caprile"
 VILLINO_RUGGERI = "Villino Ruggeri"
+FREE = "free"
 
 LABELS = [ARCO, BERLINA, CASA_ROSSINI, CATTEDRALE, CENTRO_ARTI_VISIVE, CHIESA_SAN_AGOSTINO, FONTANA, PALAZZO_BAVIERA,
           PALAZZO_COMUNALE, PALAZZO_DUCALE, PALAZZO_OLIVIERI, PALLA, SEDE_POSTE, PARROCCHIA_SANTA_MARIA,
           PORTALE_SAN_DOMENICO, ROCCA_COSTANZA, SCULTURA_MEMORIA, SCULTURA_GARIBALDI, SCULTURA_ROSSINI,
-          SCULTURA_PERTICARI, TEATRO_ROSSINI, TEATRO_SPERIMENTALE, VILLA_CAPRILE, VILLINO_RUGGERI]
+          SCULTURA_PERTICARI, TEATRO_ROSSINI, TEATRO_SPERIMENTALE, VILLA_CAPRILE, VILLINO_RUGGERI, FREE]
 
 INPUT_PATH = "Dataset/"
 
@@ -94,110 +95,118 @@ for dir in os.listdir(INPUT_PATH):
         tag_database = root[3][0]
         tag_database.text = "Cultural Heritage Pesaro"
 
-        # Name classes
-        tag_object = root[6]
-        tag_name = tag_object[0]
-        name = tag_name.text
-
         try:
-            check_tag_object = root[7]
+            # Name classes
+            tag_object = root[6]
+            tag_name = tag_object[0]
+            name = tag_name.text
 
-            if check_tag_object.tag == tag_object.tag:
-                # File xml has more object of different classes
-                print(f"File with more object. XML: {xml}, DIR: {dir}")
-                check_labels_on_more_objects()
+            try:
+                check_tag_object = root[7]
 
-                count += 1
-                if count == num_file:
-                    print(f"--> Finished check file for {dir}", end="\n\n")
+                if check_tag_object.tag == tag_object.tag:
+                    # File xml has more object of different classes
+                    print(f"File with more object. XML: {xml}, DIR: {dir}")
+                    check_labels_on_more_objects()
 
-                with open(INPUT_PATH + dir + "/annotations/" + xml, "wb") as f:
-                    f.write(ET.tostring(root))
+                    count += 1
+                    if count == num_file:
+                        print(f"--> Finished check file for {dir}", end="\n\n")
 
-                continue
+                    with open(INPUT_PATH + dir + "/annotations/" + xml, "wb") as f:
+                        f.write(ET.tostring(root))
+
+                    continue
+            except:
+                pass
+
+            try:
+                if dir == "arcoDiTrionfo":
+                    assert name == ARCO
+
+                elif dir == "berlinaMosca":
+                    assert name == BERLINA
+
+                elif dir == "casaRossini":
+                    assert name == CASA_ROSSINI
+
+                elif dir == "cattedraleSantaMariaAssunta":
+                    assert name == CATTEDRALE
+
+                elif dir == "centroArtiVisive":
+                    assert name == CENTRO_ARTI_VISIVE
+
+                elif dir == "chiesaSanAgostino":
+                    assert name == CHIESA_SAN_AGOSTINO
+
+                elif dir == "fontanaPiazza":
+                    assert name == FONTANA
+
+                elif dir == "palazzoBaviera":
+                    assert name == PALAZZO_BAVIERA
+
+                elif dir == "palazzoComunale":
+                    assert name == PALAZZO_COMUNALE
+
+                elif dir == "palazzoDucale":
+                    assert name == PALAZZO_DUCALE
+
+                elif dir == "palazzoOlivieri":
+                    assert name == PALAZZO_OLIVIERI
+
+                elif dir == "pallaDiPomodoro":
+                    assert name == PALLA
+
+                elif dir == "palazzoDellePoste":
+                    assert name == SEDE_POSTE
+
+                elif dir == "parrocchiaSantaMaria":
+                    assert name == PARROCCHIA_SANTA_MARIA
+
+                elif dir == "portaleSanDomenico":
+                    assert name == PORTALE_SAN_DOMENICO
+
+                elif dir == "roccaCostanza":
+                    assert name == ROCCA_COSTANZA
+
+                elif dir == "sculturaDellaMemoria":
+                    assert name == SCULTURA_MEMORIA
+
+                elif dir == "statuaGioachinoRossini":
+                    assert name == SCULTURA_ROSSINI
+
+                elif dir == "statuaGiulioPerticari":
+                    assert name == SCULTURA_PERTICARI
+
+                elif dir == "statuaGiuseppeGaribaldi":
+                    assert name == SCULTURA_GARIBALDI
+
+                elif dir == "teatroRossini":
+                    assert name == TEATRO_ROSSINI
+
+                elif dir == "teatroSperimentale":
+                    assert name == TEATRO_SPERIMENTALE
+
+                elif dir == "villaCaprile":
+                    assert name == VILLA_CAPRILE
+
+                elif dir == "villinoRuggeri":
+                    assert name == VILLINO_RUGGERI
+
+                elif dir == FREE:
+                    continue
+
+                else:
+                    raise Exception(f"Error: tag NAME: {name}, DIR:{dir}, FILE:{xml}")
+
+            except Exception as e:
+                raise Exception(Exception(f"Error: tag NAME: {name}, DIR:{dir}, FILE:{xml}"))
+
         except:
-            pass
+            # No bounding box
+            assert dir == FREE
 
-        try:
-            if dir == "arcoDiTrionfo":
-                assert name == ARCO
-
-            elif dir == "berlinaMosca":
-                assert name == BERLINA
-
-            elif dir == "casaRossini":
-                assert name == CASA_ROSSINI
-
-            elif dir == "cattedraleSantaMariaAssunta":
-                assert name == CATTEDRALE
-
-            elif dir == "centroArtiVisive":
-                assert name == CENTRO_ARTI_VISIVE
-
-            elif dir == "chiesaSanAgostino":
-                assert name == CHIESA_SAN_AGOSTINO
-
-            elif dir == "fontanaPiazza":
-                assert name == FONTANA
-
-            elif dir == "palazzoBaviera":
-                assert name == PALAZZO_BAVIERA
-
-            elif dir == "palazzoComunale":
-                assert name == PALAZZO_COMUNALE
-
-            elif dir == "palazzoDucale":
-                assert name == PALAZZO_DUCALE
-
-            elif dir == "palazzoOlivieri":
-                assert name == PALAZZO_OLIVIERI
-
-            elif dir == "pallaDiPomodoro":
-                assert name == PALLA
-
-            elif dir == "palazzoDellePoste":
-                assert name == SEDE_POSTE
-
-            elif dir == "parrocchiaSantaMaria":
-                assert name == PARROCCHIA_SANTA_MARIA
-
-            elif dir == "portaleSanDomenico":
-                assert name == PORTALE_SAN_DOMENICO
-
-            elif dir == "roccaCostanza":
-                assert name == ROCCA_COSTANZA
-
-            elif dir == "sculturaDellaMemoria":
-                assert name == SCULTURA_MEMORIA
-
-            elif dir == "statuaGioachinoRossini":
-                assert name == SCULTURA_ROSSINI
-
-            elif dir == "statuaGiulioPerticari":
-                assert name == SCULTURA_PERTICARI
-
-            elif dir == "statuaGiuseppeGaribaldi":
-                assert name == SCULTURA_GARIBALDI
-
-            elif dir == "teatroRossini":
-                assert name == TEATRO_ROSSINI
-
-            elif dir == "teatroSperimentale":
-                assert name == TEATRO_SPERIMENTALE
-
-            elif dir == "villaCaprile":
-                assert name == VILLA_CAPRILE
-
-            elif dir == "villinoRuggeri":
-                assert name == VILLINO_RUGGERI
-
-            else:
-                raise Exception(f"Error: tag NAME: {name}, DIR:{dir}, FILE:{xml}")
-
-        except Exception as e:
-            raise Exception(Exception(f"Error: tag NAME: {name}, DIR:{dir}, FILE:{xml}"))
-
-        # Save changes
+            # Save changes
         with open(INPUT_PATH + dir + "/annotations/" + xml, "wb") as f:
             f.write(ET.tostring(root))
 
